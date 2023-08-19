@@ -1,17 +1,6 @@
 name: Build
 
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - "master"
-      - "dev"
-      - "open.mp"
-  pull_request:
-    branches:
-      - "*"
-      - "*/*"
-      - "**"
+on: push
 
 jobs:
   build-windows-release:
